@@ -44,6 +44,7 @@ set expandtab
 set shiftwidth=4
 set smarttab
 set completeopt-=preview
+set scrolloff=5
 
 " Enable syntax highlighting by default
 syntax on
