@@ -1,0 +1,9 @@
+[user]
+    name = ***
+    email = ***
+
+[core]
+	editor = code -n --wait
+
+[url "git@github.com:"]
+    insteadOf = https://github.com/
