@@ -1,0 +1,16 @@
+{
+    "git.confirmSync": false,
+    "editor.formatOnSaveTimeout": 10000,
+    "editor.fontSize": 16,
+    "editor.minimap.enabled": false,
+    "editor.rulers": [
+        100
+    ],
+    "workbench.iconTheme": "vs-minimal",
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.renderWhitespace": "none",
+    "workbench.colorTheme": "Dark (Molokai)",
+    "window.zoomLevel": 0
+}

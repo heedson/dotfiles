@@ -1,0 +1,6 @@
+[
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.navigateBack"
+    }
+]
