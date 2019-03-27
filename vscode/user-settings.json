@@ -1,16 +1,20 @@
 {
-    "git.confirmSync": false,
     "editor.formatOnSaveTimeout": 10000,
-    "editor.fontSize": 16,
+    "editor.fontSize": 14,
     "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
     "editor.rulers": [
         100
     ],
-    "workbench.iconTheme": "vs-minimal",
-    "telemetry.enableTelemetry": false,
+
     "telemetry.enableCrashReporter": false,
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.renderWhitespace": "none",
+    "telemetry.enableTelemetry": false,
+
+    "window.zoomLevel": 0,
+    "window.titleBarStyle": "custom",
+
+    // Requires the "Dark Molokai Theme" extension by "nonylene".
     "workbench.colorTheme": "Dark (Molokai)",
-    "window.zoomLevel": 0
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.startupEditor": "newUntitledFile"
 }
