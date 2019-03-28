@@ -7,6 +7,11 @@
         100
     ],
 
+    "go.formatFlags": [
+        "-local", "github.com/heedson"
+        //"-local", "other-local-imports"
+    ],
+    
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
 
