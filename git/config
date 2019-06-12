@@ -1,9 +1,12 @@
 [user]
-    name = ***
-    email = ***
+    name = David Hudson
+    email = david-h-3110@hotmail.co.uk
+
+# [includeIf "gitdir:$HOME/wrk/src/some/path"]
+#    path = config-user-override
 
 [core]
-	editor = code -n --wait
+    editor = code -n --wait
 
 [url "git@github.com:"]
     insteadOf = https://github.com/
