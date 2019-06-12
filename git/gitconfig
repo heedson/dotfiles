@@ -7,3 +7,11 @@
 
 [url "git@github.com:"]
     insteadOf = https://github.com/
+
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	pushf = push --force-with-lease
+	amend = commit --amend --no-edit
