@@ -1,21 +1,28 @@
 [user]
-    name = David Hudson
-    email = david-h-3110@hotmail.co.uk
+	name = David Hudson
+	email = davidhudson3110@gmail.com
+	signkey = CEA9956F2076CFAA
 
 # [includeIf "gitdir:$HOME/wrk/src/some/path"]
-#    path = config-user-override
+#    	path = config-user-override
+
+[commit]
+	gpgsign = true
 
 [core]
-    editor = code -n --wait
+	editor = code -n --wait
 
 [url "git@github.com:"]
-    insteadOf = https://github.com/
+	insteadOf = https://github.com/
 
 [alias]
-	co = checkout
+	sw = switch
+	re = restore
 	br = branch
 	ci = commit
 	st = status
+	rem = rebase -i origin/master
+	rec = rebase --continue
 	pushf = push --force-with-lease
 	amend = commit --amend --no-edit
 	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
