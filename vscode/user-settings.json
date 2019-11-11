@@ -9,17 +9,42 @@
 
     "go.formatFlags": [
         "-local", "github.com/heedson"
-        //"-local", "other-local-imports"
     ],
+    "go.languageServerExperimentalFeatures": {
+        "documentLink": false
+    },
+    // Remove this when working in non-module repos.
+    //"go.toolsEnvVars": {
+    //    "GO111MODULE": "on"
+    //},
+    "go.useLanguageServer": true,
+    "[go]": {
+        "editor.snippetSuggestions": "none",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "gopls": {
+        "usePlaceholders": true, // add parameter placeholders when completing a function
+        "completionDocumentation": true // for documentation in completion items
+    },
+    "files.eol": "\n", // formatting only supports LF line endings
     
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
 
     "window.zoomLevel": 0,
-    "window.titleBarStyle": "custom",
 
     // Requires the "Dark Molokai Theme" extension by "nonylene".
     "workbench.colorTheme": "Dark (Molokai)",
     "workbench.iconTheme": "vs-minimal",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+
+    "protoc": {
+        "options": [
+            "--proto_path=${workspaceRoot}/",
+            "--proto_path=${env.GOPATH}/src"
+        ]
+    }
 }
