@@ -1,23 +1,13 @@
 {
-    "editor.formatOnSaveTimeout": 10000,
     "editor.fontSize": 14,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "none",
     "editor.rulers": [
-        100
+        120
     ],
 
-    "go.formatFlags": [
-        "-local", "github.com/heedson"
-    ],
-    "go.languageServerExperimentalFeatures": {
-        "documentLink": false
-    },
-    // Remove this when working in non-module repos.
-    //"go.toolsEnvVars": {
-    //    "GO111MODULE": "on"
-    //},
     "go.useLanguageServer": true,
+    "go.lintTool": "golangci-lint",
     "[go]": {
         "editor.snippetSuggestions": "none",
         "editor.formatOnSave": true,
@@ -26,25 +16,32 @@
         }
     },
     "gopls": {
-        "usePlaceholders": true, // add parameter placeholders when completing a function
-        "completionDocumentation": true // for documentation in completion items
+        "usePlaceholders": true,
+        "ui.documentation.linksInHover": false,
+        "ui.navigation.importShortcut": "Definition",
+        "local": "github.com/heedson",
     },
     "files.eol": "\n", // formatting only supports LF line endings
     
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-
-    "window.zoomLevel": 0,
-
-    // Requires the "Dark Molokai Theme" extension by "nonylene".
-    "workbench.colorTheme": "Dark (Molokai)",
-    "workbench.iconTheme": "vs-minimal",
-    "workbench.startupEditor": "newUntitledFile",
-
     "protoc": {
         "options": [
             "--proto_path=${workspaceRoot}/",
             "--proto_path=${env.GOPATH}/src"
         ]
-    }
+    },
+
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+
+    // Requires the "Dark Molokai Theme" extension by "nonylene".
+    "workbench.colorTheme": "Dark (Molokai)",
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.startupEditor": "newUntitledFile",
+    "extensions.ignoreRecommendations": false,
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.editorAssociations": {
+        "git-rebase-todo": "default"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "explorer.confirmDragAndDrop": false
 }
